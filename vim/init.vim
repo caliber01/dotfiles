@@ -40,6 +40,7 @@ Plug 'tpope/vim-repeat'
 Plug 'carlitux/deoplete-ternjs'
 Plug 'Konfekt/FastFold'
 Plug 'chriskempson/base16-vim'
+Plug 'zchee/deoplete-jedi'
 call plug#end()
 
 let mapleader=" "
@@ -227,6 +228,8 @@ let g:deoplete#keyword_patterns.css = '\w+'
 let g:deoplete#sources= {}
 let g:deoplete#sources._ = []
 let g:deoplete#sources.js = []
+let g:deoplete#ignore_sources={}
+let g:deoplete#ignore_sources.python = ['buffer']
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " omnifuncs
