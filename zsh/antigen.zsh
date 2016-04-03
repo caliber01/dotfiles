@@ -9,13 +9,14 @@ antigen bundle heroku
 antigen bundle pip
 antigen bundle lein
 antigen bundle command-not-found
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
-antigen theme robbyrussell
+#antigen theme pure
 
 # Tell antigen that you're done.
 antigen apply
-

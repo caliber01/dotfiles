@@ -39,6 +39,7 @@ Plug 'sukima/xmledit/'
 Plug 'tpope/vim-repeat'
 Plug 'carlitux/deoplete-ternjs'
 Plug 'Konfekt/FastFold'
+Plug 'chriskempson/base16-vim'
 call plug#end()
 
 let mapleader=" "
@@ -66,7 +67,8 @@ set smartcase
 set exrc
 
 " Colors
-colorscheme solarized
+colorscheme base16-default
+let base16colorspace=256
 set background=dark
 set t_Co=256
 " very slow
@@ -187,36 +189,12 @@ let g:indent_guides_guide_size = 2
 let g:indent_guides_auto_colors = 0
 
 " Airline
-let g:airline_theme='solarized'
 let g:airline_powerline_fonts = 1
-let g:airline_powerline_fonts = 1
+let g:airline#extensions#whitespace#mixed_indent_algo = 1
 
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
-
-" unicode symbols
-let g:airline_left_sep           = '»'
-let g:airline_left_sep           = '▶'
-let g:airline_right_sep          = '«'
-let g:airline_right_sep          = '◀'
-let g:airline_symbols.linenr     = '␊'
-let g:airline_symbols.linenr     = '␤'
-let g:airline_symbols.linenr     = '¶'
-let g:airline_symbols.branch     = '⎇'
-let g:airline_symbols.paste      = 'ρ'
-let g:airline_symbols.paste      = 'Þ'
-let g:airline_symbols.paste      = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
-
-" airline symbols
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
 
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
