@@ -1,4 +1,4 @@
-source ./antigen/antigen.zsh
+source $ZSH/zsh/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -17,4 +17,5 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme robbyrussell
 
 # Tell antigen that you're done.
-antigen apply<Paste>
+antigen apply
+
