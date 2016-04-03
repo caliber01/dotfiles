@@ -1,5 +1,10 @@
 [user]
-        name = AUTHORNAME
-        email = AUTHOREMAIL
+        name = Maxim
+        email = caliber1997@gmail.com
 [credential]
         helper = GIT_CREDENTIAL_HELPER
+[core]
+        editor = nvim
+        autocrlf = input
+[rerere]
+        enabled = true
