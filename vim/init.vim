@@ -68,8 +68,8 @@ set smartcase
 set exrc
 
 " Colors
-colorscheme base16-default
-let base16colorspace=256
+" colorscheme base16-default
+" let base16colorspace=256
 set background=dark
 set t_Co=256
 " very slow
