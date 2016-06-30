@@ -50,3 +50,5 @@ set -g @resurrect-strategy-nvim 'session'
 bind '"' split-window -c "#{pane_current_path}"
 bind % split-window -h -c "#{pane_current_path}"
 bind c new-window -c "#{pane_current_path}"
+
+bind -t vi-copy y copy-pipe 'xclip -in -selection clipboard'

@@ -11,6 +11,7 @@ antigen bundle lein
 antigen bundle command-not-found
 antigen bundle mafredri/zsh-async
 antigen bundle sindresorhus/pure
+antigen bundle gulp
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting

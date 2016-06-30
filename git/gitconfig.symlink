@@ -14,9 +14,10 @@
         status = auto
         branch = auto
         ui = true
+	interactive = true
 [core]
         excludesfile = ~/.gitignore
-        editor = vim
+        editor = nvim
 [apply]
         whitespace = nowarn
 [mergetool]
