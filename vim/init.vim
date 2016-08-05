@@ -32,7 +32,7 @@ Plug 'mhinz/vim-startify'
 Plug 'skammer/vim-css-color'
 Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'wakatime/vim-wakatime'
+" Plug 'wakatime/vim-wakatime'
 Plug 'Yggdroot/indentLine'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'sukima/xmledit/'
