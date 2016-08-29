@@ -52,3 +52,7 @@ bind % split-window -h -c "#{pane_current_path}"
 bind c new-window -c "#{pane_current_path}"
 
 bind -t vi-copy y copy-pipe 'xclip -in -selection clipboard'
+
+# powerline plugin
+# run-shell "powerline-daemon -q"
+# source ~/.local/lib/python3.5/site-packages/powerline/bindings/tmux/powerline.conf
