@@ -17,7 +17,7 @@ antigen bundle gulp
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
-#antigen theme pure
+# antigen theme pure
 
 # Tell antigen that you're done.
 antigen apply
