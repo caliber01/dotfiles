@@ -13,6 +13,7 @@ antigen bundle mafredri/zsh-async
 antigen bundle sindresorhus/pure
 antigen bundle gulp
 antigen bundle vi-mode
+antigen bundle archlinux
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
