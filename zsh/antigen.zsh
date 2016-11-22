@@ -12,6 +12,7 @@ antigen bundle command-not-found
 antigen bundle mafredri/zsh-async
 antigen bundle sindresorhus/pure
 antigen bundle gulp
+antigen bundle vi-mode
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
