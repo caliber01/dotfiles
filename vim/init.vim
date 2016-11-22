@@ -87,7 +87,7 @@ let javaScript_fold=1  " JavaScript
 set hidden
 
 "Numbers
-set number
+set relativenumber
 set numberwidth=5
 
 " Errors navigation
