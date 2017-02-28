@@ -1,3 +1,5 @@
 alias reload!='. ~/.zshrc'
-eval "$(thefuck --alias)"
 alias progress='progress -w'
+alias cclip='xclip -sel clip'
+alias updateaur='yaourt -Syu --aur --noconfirm'
+alias updatestd='yaourt -Syu --noconfirm'
