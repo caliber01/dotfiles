@@ -14,6 +14,7 @@ antigen bundle sindresorhus/pure
 antigen bundle gulp
 antigen bundle vi-mode
 antigen bundle archlinux
+antigen bundle zsh-nvm
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
