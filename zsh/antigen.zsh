@@ -14,10 +14,13 @@ antigen bundle sindresorhus/pure
 antigen bundle gulp
 antigen bundle vi-mode
 antigen bundle archlinux
-antigen bundle zsh-nvm
+antigen bundle npm
+antigen bundle yarn
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-history-substring-search
 
 # Load the theme.
 # antigen theme pure

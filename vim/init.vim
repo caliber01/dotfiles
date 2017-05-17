@@ -1,18 +1,18 @@
 call plug#begin()
-Plug 'ryanoasis/vim-devicons'
+" Plug 'ryanoasis/vim-devicons'
 Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdtree'
 Plug 'benekastah/neomake'
 Plug 'Shougo/deoplete.nvim'
 Plug 'Shougo/neopairs.vim'
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
+" Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
-Plug 'rking/ag.vim'
+" Plug 'rking/ag.vim'
 Plug 'digitaltoad/vim-jade'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'terryma/vim-multiple-cursors'
@@ -30,17 +30,17 @@ Plug 'tpope/vim-obsession'
 Plug 'elzr/vim-json'
 Plug 'mhinz/vim-startify'
 Plug 'skammer/vim-css-color'
-Plug 'Shougo/vimproc.vim', {'do': 'make'}
+" Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'wakatime/vim-wakatime'
 Plug 'Yggdroot/indentLine'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'sukima/xmledit/'
 Plug 'tpope/vim-repeat'
-Plug 'carlitux/deoplete-ternjs'
+" Plug 'carlitux/deoplete-ternjs'
 Plug 'Konfekt/FastFold'
 Plug 'chriskempson/base16-vim'
-Plug 'zchee/deoplete-jedi'
+" Plug 'zchee/deoplete-jedi'
 call plug#end()
 
 let mapleader=" "
@@ -49,16 +49,16 @@ filetype plugin indent on
 syntax on
 
 " vim devicons
-set encoding=utf8
-let g:webdevicons_conceal_nerdtree_brackets=1
-let g:WebDevIconsNerdTreeGitPluginForceVAlign=1
-let g:WebDevIconsUnicodeDecorateFolderNodes=1
-let g:DevIconsEnableFoldersOpenClose=1
-let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
-let g:webdevicons_enable_ctrlp=1
-if exists("g:loaded_webdevicons")
-    call webdevicons#refresh()
-endif
+" set encoding=utf8
+" let g:webdevicons_conceal_nerdtree_brackets=1
+" let g:WebDevIconsNerdTreeGitPluginForceVAlign=1
+" let g:WebDevIconsUnicodeDecorateFolderNodes=1
+" let g:DevIconsEnableFoldersOpenClose=1
+" let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
+" let g:webdevicons_enable_ctrlp=1
+" if exists("g:loaded_webdevicons")
+    " call webdevicons#refresh()
+" endif
 
 " cases
 set ignorecase
@@ -69,6 +69,7 @@ set exrc
 
 " Colors
 " colorscheme base16-default
+colorscheme solarized
 " let base16colorspace=256
 set background=dark
 set t_Co=256
@@ -123,6 +124,7 @@ set nojoinspaces
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1
+highlight ColorColumn ctermbg=7
 
 " Set spellfile to location that is guaranteed to exist, can be symlinked to
 " Dropbox or kept in Git and managed outside of thoughtbot/dotfiles using rcm.
