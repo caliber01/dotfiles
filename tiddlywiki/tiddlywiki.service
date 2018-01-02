@@ -1,0 +1,8 @@
+[Unit]
+Description=Tiddlywiki server
+
+[Service]
+ExecStart=/usr/bin/tiddlywiki /home/maksym/ownCloud/wiki/mywiki --server
+
+[Install]
+WantedBy=multi-user.target

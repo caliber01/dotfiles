@@ -73,4 +73,4 @@ bind -t vi-copy y copy-pipe 'xclip -in -selection clipboard'
 
 # powerline plugin
 run-shell "powerline-daemon -q"
-source /usr/local/lib/python3.5/dist-packages/powerline/bindings/tmux/powerline.conf
+source "$POWERLINE_HOME"

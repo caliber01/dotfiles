@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+cd "$(dirname "$0")/.."
+DOTFILES_ROOT=$(pwd -P)
+
+install_init_scripts () {
+  echo 'installing init scripts'
+  dst="/etc/systemd/system/"
+
+  for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.service' -not -path '*.git*')
+  do
+    echo $src
+    cp $src $dst
+  done
+}
+
+install_init_scripts

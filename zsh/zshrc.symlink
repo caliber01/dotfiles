@@ -1,18 +1,8 @@
-# TMUX
-if which tmux >/dev/null 2>&1; then
-	# if no session is started, start a new session
-	test -z ${TMUX} && tmux
-	# when quitting tmux, try to attach
-	while test -z ${TMUX}; do
-		tmux attach || break
-	done
-fi
-
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
-export PROJECTS=~/Workspace
+export PROJECTS=~/ownCloud/Workspace
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
@@ -55,3 +45,14 @@ unset config_files
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+if [[ -z "$TMUX" ]]
+then
+    ID="`tmux ls | grep -vm1 attached | cut -d: -f1`"
+    if [[ -z "$ID" ]]
+    then
+        tmux new-session
+    else
+        tmux attach-session -t "$ID"
+    fi
+fi
