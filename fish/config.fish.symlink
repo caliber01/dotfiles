@@ -1,0 +1,5 @@
+fish_vi_key_bindings
+
+set -gx PATH $HOME/anaconda3/bin $PATH
+source (conda info --root)/etc/fish/conf.d/conda.fish
+conda activate root
