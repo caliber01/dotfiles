@@ -1,5 +1,21 @@
 fish_vi_key_bindings
 
-set -gx PATH $HOME/anaconda3/bin $PATH
+set -gx PATH $HOME/anaconda3/bin /usr/local/go/bin $HOME/go/bin $PATH
+set -gx LD_LIBRARY_PATH $HOME/.mujoco/mjpro150/bin $LD_LIBRARY_PATH
+
+set -gx MKL_THREADING_LAYER GNU
 source (conda info --root)/etc/fish/conf.d/conda.fish
 conda activate root
+
+alias ll "exa -l"
+alias lg "lazygit"
+alias gs "git status -s"
+alias nodejs node
+
+bind \cF forward-word
+
+function fish_user_key_bindings
+    for mode in insert default visual
+        bind -M $mode \cf forward-char
+    end
+end
