@@ -69,7 +69,8 @@ module.exports = {
     // 'hyperterm-snazzy',
     // 'hyperterm-blink',
     'hyper-ligatures',
-    'hyperlinks'
+    'hyperlinks',
+    'hyperterm-base16-tomorrow-dark'
   ],
 
   // in development, you can create a directory under

@@ -1,16 +1,22 @@
 fish_vi_key_bindings
 
-set -gx PATH $HOME/anaconda3/bin /usr/local/go/bin $HOME/go/bin $PATH
-set -gx LD_LIBRARY_PATH $HOME/.mujoco/mjpro150/bin $LD_LIBRARY_PATH
-
+set -gx PATH $HOME/anaconda3/bin /usr/local/go/bin $HOME/go/bin /snap/bin $PATH
+# set -gx LD_LIBRARY_PATH $HOME/.mujoco/mjpro150/bin $LD_LIBRARY_PATH
 set -gx MKL_THREADING_LAYER GNU
+set -gx HOSTNAME (hostname)
+
 source (conda info --root)/etc/fish/conf.d/conda.fish
 conda activate root
 
+alias vim nvim
 alias ll "exa -l"
 alias lg "lazygit"
 alias gs "git status -s"
 alias nodejs node
+alias nvm 'bass source ~/.nvm/nvm.sh ";" nvm'
+
+
+nvm use default
 
 bind \cF forward-word
 
